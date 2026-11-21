@@ -1,0 +1,15 @@
+{
+  "name": "together-game",
+  "version": "1.0.0",
+  "description": "TOGETHER! - game nền tảng 2D hợp tác tối đa 8 người (Node.js, không cần thư viện ngoài)",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node tests/test.js",
+    "test:browser": "node tests/browser-test.js",
+    "assets": "node tools/gen-assets.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "private": true
+}

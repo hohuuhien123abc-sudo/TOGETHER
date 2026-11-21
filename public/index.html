@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><title>TOGETHER! – Cùng nhau vượt ải</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="assets/characters/char_0.svg"><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="floaters" id="floaters"></div>
+<div class="topbar"><span class="pill" id="who">Khách</span><button class="s w" id="b-auth">Đăng nhập</button></div>
+<div class="center">
+  <h1 class="logo" id="logo"></h1>
+  <p class="muted" style="font-weight:700">Game nền tảng hợp tác 2–8 người – không ai bị bỏ lại phía sau!</p>
+  <div class="row" style="margin:0"><input id="nick" maxlength="14" placeholder="Biệt danh của bạn" style="text-align:center;width:260px"></div>
+  <div class="menu">
+    <button class="g" id="b-quick">⚡ Chơi nhanh (phòng công khai)</button>
+    <button id="b-create">🏠 Tạo phòng</button>
+    <button class="y" id="b-join">🔑 Vào bằng mã phòng</button>
+    <button class="w" id="b-public">🌍 Danh sách phòng công khai</button>
+    <button class="w" id="b-solo">🎮 Chơi một mình</button>
+    <div class="row" style="margin:0"><button class="w" style="flex:1" id="b-lb">🏆 Bảng xếp hạng</button><button class="w" style="flex:1" id="b-edit">🛠 Tạo bản đồ</button></div>
+    <button class="w s" id="b-help">❓ Cách chơi</button>
+  </div>
+</div>
+<div id="modal" class="modal hidden"><div class="card" id="mbox"></div></div>
+<div id="editor" class="hidden">
+  <div id="ed-tools"></div><div id="ed-wrap"><canvas id="ed-cv"></canvas></div>
+</div>
+<script src="js/levels.js"></script><script src="js/multiplayer.js"></script><script src="js/menu.js"></script>
+</body></html>

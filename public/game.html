@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><title>TOGETHER! – Phòng chơi</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="assets/characters/char_0.svg"><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<canvas id="cv"></canvas>
+<div id="hud" class="hidden">
+  <div class="top"><span id="h-name"></span><span id="h-time"></span><span id="h-coins"></span></div>
+  <div id="score"></div><div id="cdown"></div><div id="chatlog"></div>
+  <div id="help">A/D di chuyển • Space nhảy • R hồi sinh • 1-6 biểu cảm • Enter chat • M âm thanh • Esc menu</div>
+</div>
+<input id="chatin" class="hidden" maxlength="120" placeholder="Nhập tin nhắn rồi Enter…">
+<div id="lobby">
+  <div class="col l"><div class="card">
+    <div class="muted">Mã phòng (bấm để sao chép)</div><div class="code" id="l-code">----</div>
+    <div class="row"><label><input type="checkbox" id="l-pub"> Phòng công khai</label><span class="muted" id="l-count"></span></div>
+    <div class="slots" id="slots"></div>
+    <div class="row"><button class="g" id="l-ready">Sẵn sàng</button><button class="w" id="l-leave">← Rời phòng</button></div>
+  </div>
+  <div class="card" style="flex:1;display:flex;flex-direction:column;min-height:150px"><div id="lchat" style="flex:1;overflow:auto;font-size:.9rem"></div><input id="lchatin" maxlength="120" placeholder="Trò chuyện…"></div></div>
+  <div class="col rr"><div class="card">
+    <h2>🎯 Chọn màn chơi <span class="muted" id="l-sel"></span></h2>
+    <div class="tabs" id="l-tabs"><button data-p="camp" class="on">Chiến dịch (120 màn)</button><button data-p="mini">Mini-game</button><button data-p="maps">Bản đồ cộng đồng</button></div>
+    <div id="p-camp"><div id="lvgrid"></div><p class="muted" id="l-lim"></p></div>
+    <div id="p-mini" class="hidden"></div><div id="p-maps" class="hidden"></div>
+    <div class="row"><button class="g" id="l-start" style="font-size:1.3rem;padding:14px 30px">▶ BẮT ĐẦU</button><span class="muted" id="l-wait"></span></div>
+    <div class="err" id="l-err"></div>
+  </div></div>
+</div>
+<div id="result" class="hidden"><div class="card" id="rbox"></div></div>
+<script src="js/levels.js"></script><script src="js/physics.js"></script><script src="js/multiplayer.js"></script>
+<script src="js/puzzles.js"></script><script src="js/player.js"></script><script src="js/main.js"></script>
+</body></html>
